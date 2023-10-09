@@ -1,0 +1,84 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#img {
+  width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.menuicon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+
+/* Estilos para o menu de navegação */
+
+nav {
+  display: flex;
+  align-items: center; /* Centralizar verticalmente no header */
+  justify-content: flex-end; /* Alinhe o menu à direita no header */
+  margin: auto;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 20px; /* Espaçamento entre os links */
+  font-size: 20px;
+  color: #fff; /* Cor das letras branca */
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #004da0; /* Cor roxa no hover */
+}
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+  }
+
+  #img {
+    display: none;
+  }
+
+  .menuicon {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2rem; /* Reduzir o tamanho do ícone do menu */
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  nav.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    background-color: transparent;
+  }
+
+  nav a {
+    margin: 10px 0;
+    display: block;
+    font-size: 1rem; /* Reduzir o tamanho do texto do menu */
+  }
+}

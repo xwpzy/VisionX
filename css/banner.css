@@ -1,0 +1,89 @@
+/* Estilos para o seletor .banner */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 790px;
+}
+
+/* Estilos para o conteúdo do banner */
+.banner-content {
+  flex: 1;
+  text-align: center;
+  max-width: 600px;
+  padding: 50px;
+}
+
+/* Outros estilos... */
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.buttons1 {
+  filter: drop-shadow(0 0 5px #055580) drop-shadow(0 0 5px #02517c)
+    contrast(1.2) brightness(1.2); /* Ajuste os valores conforme necessário */
+  transition: 0.5s;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button1 {
+  display: inline-block;
+  background-color: #0b6fa5; /* Cor de fundo cinza escuro */
+  color: #fff; /* Cor do texto branca */
+  padding: 12px 24px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin: 0 40px;
+  width: auto;
+  margin-top: 30px;
+  transition: transform 0.5s; /* Adiciona uma transição para a transformação */
+}
+
+/* Efeito de hover para suavizar a cor de fundo */
+.button1:hover {
+  color: #000000;
+  background-color: #005481; /* Cor de fundo cinza escuro ligeiramente mais clara quando hover */
+}
+
+/* Estilos para dispositivos móveis apenas */
+@media screen and (max-width: 768px) {
+  /* Coloque os estilos específicos para dispositivos móveis aqui */
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-content {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .banner-image {
+    align-items: center;
+  }
+
+  .banner-image img {
+    width: 100%; /* Ajuste a largura para preencher a largura do contêiner */
+    max-width: none; /* Remova a largura máxima */
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .button1 {
+    margin: 10px 0; /* Ajuste a margem para dispositivos móveis */
+  }
+}

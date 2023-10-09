@@ -1,0 +1,39 @@
+@import url(header.css);
+@import url(banner.css);
+@import url(bene.css);
+@import url(footer.css);
+@import url(responsividade.css);
+@import url(download.css);
+@import url(key.css);
+@import url(sobre.css);
+@import url(contato.css);
+@import url(script.css);
+
+/* Reset de estilos */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Configuração de fonte padrão e tamanho base */
+body {
+  font-family: "Poppins", sans-serif !important;
+  background: rgba(0, 0, 0, 0.667); /* Define o mesmo background */
+  background-image: url(../images/fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.571);
+  backdrop-filter: blur(10.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  color: #fff; /* Cor das letras branca */
+}

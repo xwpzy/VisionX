@@ -1,0 +1,77 @@
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 100px 0;
+  background-color: #000000;
+}
+
+.feature {
+  text-align: center;
+  margin-bottom: 40px;
+  width: calc(20% - 10px); /* Tamanho fixo com margens adequadas */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 48px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.feature-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.feature-content p {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+/* Estilos para a seção de recursos em dispositivos móveis apenas */
+@media screen and (max-width: 768px) {
+  .features {
+    display: flex;
+    flex-direction: column; /* Empilhe os recursos verticalmente em dispositivos móveis */
+    align-items: center; /* Centralize os recursos */
+    padding: 20px 0; /* Reduza o espaçamento superior/inferior */
+  }
+
+  .feature {
+    width: 100%; /* Ocupa 100% da largura da tela */
+    margin-bottom: 20px; /* Reduza a margem inferior */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .icon {
+    font-size: 36px; /* Reduza o tamanho do ícone */
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+
+  .feature-content h2 {
+    font-size: 24px; /* Reduza o tamanho do título */
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+
+  .feature-content p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.5;
+  }
+
+  /* Estilos para imagens dentro de ícones em dispositivos móveis */
+  .icon i {
+    font-size: 36px;
+    width: 36px;
+    height: 36px;
+  }
+}

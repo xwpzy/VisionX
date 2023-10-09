@@ -1,0 +1,56 @@
+.main-section {
+  background: linear-gradient(73deg, #00000000 17%, #0b305700 100%),
+    url("../images/R.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.568);
+  box-shadow: 0 10px 32px 0 rgba(0, 0, 0, 0.219);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 50px;
+  border: 1px solid rgba(41, 82, 105, 0.253);
+  padding: 20px;
+  color: white;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  text-align: center;
+}
+
+.logo-container {
+  margin-right: 20px;
+}
+
+.logo {
+  width: 150px; /* Ajuste o tamanho do logo conforme necessário */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+/* Estilos do rodapé */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #000;
+  color: #777;
+  font-size: 14px;
+}
